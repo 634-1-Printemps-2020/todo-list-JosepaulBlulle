@@ -155,11 +155,44 @@ class GestionnaireTachesTest {
 
     @Test
     void annulerTacheOK() throws TacheException {
+        // Déjà testé : testCreateurExiste(createur);
+        //              testCreateurContainsTache(createur, tache);
+        GestionnaireTaches listeTaches = new GestionnaireTaches();
+        LocalDate date = LocalDate.of(2021, 2, 1);
+        listeTaches.creerTache(1, "JP", "prendre rendez-vous chez le médecin", date, "open", "ignored");
+        Tache tache = listeTaches.getTache(1, "JP");
 
+        try {
+            listeTaches.annulerTache("JP", tache);
+
+        } catch (TacheException e) { Assertions.fail(e); }
     }
 
     @Test
-    void annulerTacheNOK() throws TacheException {
+    void annulerTacheCreateurNOK() throws TacheException {
+        GestionnaireTaches listeTaches = new GestionnaireTaches();
+        LocalDate date = LocalDate.of(2021, 2, 1);
+        listeTaches.creerTache(1, "JP", "prendre rendez-vous chez le médecin", date, "open", "ignored");
+        Tache tache = listeTaches.getTache(1, "JP");
 
+        try {
+            listeTaches.annulerTache("J", tache);
+            Assertions.fail();
+
+        } catch (TacheException ignored) { }
+    }
+
+    @Test
+    void annulerTacheCreateurTacheNOK() throws TacheException {
+        GestionnaireTaches listeTaches = new GestionnaireTaches();
+        LocalDate date = LocalDate.of(2021, 2, 1);
+        listeTaches.creerTache(1, "JP", "prendre rendez-vous chez le médecin", date, "open", "ignored");
+        Tache tache = new Tache(1, "J", "", LocalDate.now(), "open", "ignored");
+
+        try {
+            listeTaches.annulerTache("JP", tache);
+            Assertions.fail();
+
+        } catch (TacheException ignored) { }
     }
 }

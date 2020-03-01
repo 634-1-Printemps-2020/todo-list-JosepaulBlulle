@@ -6,7 +6,7 @@ import domaine.TacheException;
 import java.time.LocalDate;
 import java.util.*;
 
-public class GestionnaireTaches {
+public class GestionnaireTaches implements IGestionnaireTaches {
     private Map<String, Set<Tache>> listeTaches;
 
     public GestionnaireTaches(Map<String, Set<Tache>> listeTaches) {

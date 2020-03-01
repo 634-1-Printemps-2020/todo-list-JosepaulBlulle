@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="28343174-8428-4745-a120-608a9dab36e8" name="Default Changelist" comment="" />
+    <list default="true" id="28343174-8428-4745-a120-608a9dab36e8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/metier/IGestionnaireTaches.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Diagramme.png" beforeDir="false" afterPath="$PROJECT_DIR$/Diagramme.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/metier/GestionnaireTaches.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/metier/GestionnaireTaches.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/metier/GestionnaireTachesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/metier/GestionnaireTachesTest.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,11 +17,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1YOg3qKGC0uv6g2kFhNTj0Kwf8D" />
   <component name="PropertiesComponent">
@@ -25,7 +34,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Revision" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -110,5 +119,18 @@
       <updated>1582818859918</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
